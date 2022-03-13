@@ -1,12 +1,5 @@
-import { Container } from 'react-bootstrap';
-import Home from '../components/Home'
-
-const App = () => {
-  return (
-    <Container>
-      < Home />
-    </Container>
-  );
+const initialState = {
+  tables: [],
 }
 
-export default App;
+export default initialState;
