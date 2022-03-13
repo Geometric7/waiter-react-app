@@ -1,5 +1,5 @@
 import { Container } from 'react-bootstrap';
-import Home from './components/Home'
+import Home from '../components/Home'
 
 const App = () => {
   return (
