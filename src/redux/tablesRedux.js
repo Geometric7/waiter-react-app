@@ -1,10 +1,10 @@
 //selectors
-export const getAllTables = state => state.Tables;
+export const getAllTables = state => state.tables;
+export const getTableId = ({ tables }, tableId) => tables.find(table => table.id === tableId);
 
 // action names
 const createActionName = name => `app/tables/${name}`;
 const UPDATE_TABLES = createActionName('UPDATE_TableS')
-
 // action creators
 export const updateTables = payload => ({ type: UPDATE_TABLES, payload });
 export const fetchTables = () => {
@@ -14,7 +14,6 @@ export const fetchTables = () => {
       .then(tables => dispatch(updateTables(tables)))
     };
 };
-
 const tablesReducer = (statePart = [], action) => {
   switch(action.type) {
     case UPDATE_TABLES:
@@ -23,5 +22,4 @@ const tablesReducer = (statePart = [], action) => {
       return statePart;
   }
 };
-
 export default tablesReducer;
