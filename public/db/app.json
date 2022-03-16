@@ -2,15 +2,15 @@
   "tables": [
     {
       "id": 1,
-      "status": "Cleaning",
+      "status": "Busy",
       "peopleAmount": 0,
       "maxPeopleAmount": 4,
-      "bill": "50"
+      "bill": "5"
     },
     {
       "id": 2,
-      "status": "Reserved",
-      "peopleAmount": "5",
+      "status": "Cleaning",
+      "peopleAmount": 0,
       "maxPeopleAmount": "5",
       "bill": 0
     },
@@ -30,8 +30,8 @@
     },
     {
       "id": 5,
-      "status": "Reserved",
-      "peopleAmount": 0,
+      "status": "Cleaning",
+      "peopleAmount": "3",
       "maxPeopleAmount": 3,
       "bill": "0"
     }
